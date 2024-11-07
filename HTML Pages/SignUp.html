@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Code For All empowers global communities through innovative technology solutions, 
+    bridging the gap between technology and social impact. Join us to drive positive change.">
+  <link rel="icon" href="../Assets/CFA.png" type="image/png">
+  <meta property="og:title" content="Code For All - Empowering Communities with Technology">
+  <meta property="og:description" content="Join Code For All to drive social impact through innovative tech solutions.">
+  <meta property="og:image" content="https://codeforall.org/Assets/CFA.png">
+  <meta property="og:url" content="https://codeforall.org">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="path/to/font.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <title>Code For All - Empowering Communities with Technology & Digital Solutions</title>
+  <link rel="stylesheet" href="../CSS/sign Up.css">
+</head>
+
+<body>
+
+  <header>
+
+    <a href="Home Page.html" target="_blank"><img id="logoHeader" src="../Assets/CFA.png"
+        alt="It is the Company's Logo"></a>
+
+
+    <h1 id="headerText">Code For All Organisation</h1>
+
+    <nav class="navbar">
+
+      <ul>
+
+
+
+
+        <li><a href="Home Page.html" target="_blank" role="button">Return to the Home Page</a></li>
+        <li><a href="About Us.html" target="_blank" role="button">Learn more About Us</a></li>
+        <li><a href="Products and Services.html" target="_blank" role="button">Explore Our Products and Services</a>
+        </li>
+        <li><a href="News.html" target="_blank" role="button">Check Our Latest News</a></li>
+        <li><a href="Contact Us.html" target="_blank" role="button">Get In Touch with Us</a></li>
+        <li><a href="Products and Services.html" target="_blank" role="button"><button id="DonateButton">Donate to
+              support</button>
+        </li></a>
+
+
+
+      </ul>
+
+    </nav>
+  </header>
+
+  <br>
+  <br>
+
+  <div class="SignUp">
+
+    <h1 id="signUpTitle">Sign Up (Events)</h1>
+    <form action="javascript:void(0);" onsubmit="submitForm()">
+      <label for="name" id="labelName">Full Name/s:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="surname" id="labelSurname">Full Surname:</label><br>
+      <input type="text" id="surname" name="surname" required><br><br>
+
+      <label for="email" id="labelEmail">Email Address:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="age" id="labelAge">Age: </label><br>
+      <input type="number" id="age" name="age" required><br><br>
+
+      <label for="phoneNumber" id="labelNumber">Phone Number:</label><br>
+      <input type="tel" id="PhoneNumber" minlength="10" maxlength="10" name="phoneNumber" required><br><br>
+
+      <label for="event" id="labelEvent">Event Applying for:</label><br><br>
+      <p id="event1Text">
+        <input type="radio" id="event1" name="event" value="Digital Civic Engagement Workshop (15 Nov 24)" required>
+        Digital Civic Engagement Workshop (15 Nov 24)
+      </p>
+      <p id="event2Text">
+        <input type="radio" id="event2" name="event"
+          value="Annual Code4SA Hackathon: Innovating for Social Change (5-7 Dec 24)">
+        Annual Code4SA Hackathon: Innovating for Social Change (5-7 Dec 24)
+      </p>
+      <p id="event3Text">
+        <input type="radio" id="event3" name="event" value="Data Literacy for Journalists Bootcamp (10-12 Jan 25)">
+        Data Literacy for Journalists Bootcamp (10-12 Jan 25)
+      </p><br><br>
+
+      <button type="submit" id="SubscribeButton">Register</button>
+    </form>
+
+  </div>
+
+  <footer>
+    <div class="MainFooter">
+      <img id="logoFooter" src="../Assets/CFA.png" alt="It is the Company's Logo">
+      <h1>Code For All</h1>
+      <h4>Support Us</h4>
+      <p id="SupportText">Your support means the world to us. If you want to suport us, Click here: </p>
+      <a href="Products and Services.html" target="_blank" role="button"><button id="donateFooter">Donate</button></a>
+    </div>
+
+    <div class="SocialsFooter">
+      <h4>Follow Us and Connect</h4>
+      <a href="https://x.com/codeforall" target="_blank"
+        alt="It is the photo of X or twitter by Elon Musk, Link to our Twitter Page"><img
+          src="../Assets/Twitter (X).jpg" height="50" width="50"></a>
+
+      <a href="https://www.instagram.com/letscodeforall/" target="_blank"
+        alt="It is the picture of Instagram, Link to our Instagram Page"><img src="../Assets/Instagram.jpg" height="50"
+          width="50"></a>
+
+      <a href="https://www.linkedin.com/company/code-for-all/" target="_blank"
+        alt="It is the picture of linkedIn, Link to our linkedIn Page"><img src="../Assets/linkedIn.png" height="50"
+          width="50"></a>
+    </div>
+
+    <div class="NewsLetterFooter">
+
+      <p id="newsletterFooterText">Our Newsletter</p>
+      <a href="Newsletter.html" target="_blank" role="button"><button id="newsletterFooter">Join Now</button></a>
+
+    </div>
+
+
+  </footer>
+
+  <script src="../JS/sign Up.js"></script>
+</body>
+
+</html>

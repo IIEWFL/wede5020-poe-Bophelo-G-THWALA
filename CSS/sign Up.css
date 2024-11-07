@@ -1,0 +1,191 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #ffffff;
+    background-image: url("Assets/CFA.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styling */
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+}
+
+#logoHeader {
+    height: 70px;
+    width: 70px;
+}
+
+#headerText {
+    color: #000000;
+    font-size: 24px;
+}
+
+/* Navigation */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar li {
+    margin: 5px;
+}
+
+.navbar a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a:hover {
+    background-color: #4f4d4d;
+}
+
+
+/* Donate button */
+#DonateButton {
+    background-color: #4f4d4d;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Sign-up form styling */
+.SignUp {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+#signUpTitle {
+    text-align: center;
+    color: #ffffff;
+}
+
+#labelName,
+#labelSurname,
+#labelEmail,
+#labelAge,
+#labelNumber,
+#event1Text,
+#event2Text,
+#event3Text {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#newsletterTitle {
+    text-align: center;
+    color: #800000;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+}
+
+#SubscribeButton {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border: 2px solid #000000;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#SubscribeButton:hover {
+    background-color: #800000;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Footer styling */
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+#logoFooter {
+    height: 90px;
+    width: 90px;
+}
+
+#SupportText,
+#newsletterFooterText {
+    color: #000000;
+}
+
+#donateFooter,
+#newsletterFooter {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+
+#donateFooter:hover,
+#newsletterFooter:hover {
+    font-weight: bold;
+}
+
+#donateFooter:hover {
+    background-color: #0338ff;
+}
+
+#newsletterFooter:hover {
+    background-color: #780fd0;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 960px) {
+    .SignUp {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #DonateButton {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"] {
+        width: 90%;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,279 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-image: url("Assets/newsBackground.png");
+  background-size: cover;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+}
+
+#logoHeader {
+  height: 70px;
+  width: 70px;
+}
+
+#headerText {
+  color: #000000;
+  font-size: 24px;
+}
+
+/* Navigation */
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navbar li {
+  margin: 5px;
+}
+
+.navbar a {
+  color: #000000;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a:hover {
+  background-color: #4f4d4d;
+}
+
+#DonateButton {
+  background-color: #4f4d4d;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* News Section */
+.NewsHeader {
+  background: linear-gradient(to bottom, #99ccff, #ff99cc);
+  color: #000000;
+  padding: 10px;
+  text-align: center;
+}
+
+#newsText {
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* News Items */
+.News01, .News02, .News03 {
+  background-color: #ffffff;
+  width: 400px;
+  margin: 10px;
+}
+
+.News01 {
+  height: 600px;
+}
+
+.News02 {
+  height: 600px;
+  position: absolute;
+  top: 381px;
+  left: 750px;
+}
+
+.News03 {
+  height: 600px;
+  position: absolute;
+  top: 381px;
+  left: 1400px;
+}
+
+#NewsletterImage, #ContactImage, #supportImage {
+  width: 400px;
+  height: 300px;
+}
+
+#News01Title, #ContactTitle, #SupportTitle {
+  color: #000000;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#News01Text, #ContactText, #SupportParagraph {
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#News01Date, #News02Date, #News03Date {
+  color: #000000;
+  font-size: 12px;
+}
+
+/* Event Section */
+#Event-Title {
+  color: #ffffff;
+  text-align: center;
+}
+
+.Event01, .Event02, .Event03 {
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#Event1Title, #Event2Title, #Event3Title {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Blogs Section */
+.BlogsHeader {
+  background-color: #000000;
+}
+
+#BlogsTitle {
+  color: #ffffff;
+  text-align: center;
+  background-color: #000000;
+}
+
+#Blogs-SubTitle {
+  text-align: center;
+  font-size: 20px;
+}
+
+.Blog1, .Blog2, .Blog3 {
+  background-color: #ffffff;
+}
+
+#blogText {
+  color: #000000;
+}
+
+/* Footer */
+footer {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+#logoFooter {
+  height: 90px;
+  width: 90px;
+}
+
+#SupportText, #newsletterFooterText {
+  color: #000000;
+}
+
+#donateFooter, #newsletterFooter {
+  background-color: #ffffff;
+  padding: 15px;
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+
+#donateFooter:hover, #newsletterFooter:hover {
+  font-weight: bold;
+}
+
+#donateFooter:hover {
+  background-color: #0338ff;
+}
+
+#newsletterFooter:hover {
+  background-color: #780fd0;
+}
+
+@media (max-width: 960px) {
+
+  /* Header */
+  header {
+    text-align: center;
+    padding: 30px;
+  }
+
+  #logoHeader {
+    position: relative;
+    margin: 0 auto;
+  }
+
+  #headerText {
+    position: static;
+    margin: 10px auto;
+    font-size: 20px;
+  }
+
+  /* Navigation */
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: static;
+  }
+
+  .navbar li {
+    display: block;
+  }
+
+  /* News Section */
+  .News01, .News02, .News03 {
+    width: 90%;
+    margin: 20px auto;
+    position: static;
+  }
+
+  #NewsletterImage, #ContactImage, #supportImage {
+    width: 100%;
+    height: auto;
+  }
+
+  #News01Title, #ContactTitle, #SupportTitle {
+    font-size: 22px;
+  }
+
+  #News01Text, #ContactText, #SupportParagraph {
+    font-size: 18px;
+  }
+
+  /* Event Section */
+  #Event1Title, #Event2Title, #Event3Title {
+    font-size: 22px;
+  }
+
+  .Event01, .Event02, .Event03 {
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Blogs Section */
+  .Blog1, .Blog2, .Blog3 {
+    padding: 15px;
+    margin: 10px auto;
+  }
+
+  #blogText {
+    font-size: 18px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,286 @@
+/*
+    background-image: url("Assets/servicesBackground.png");
+    
+    Obtained from: PITT Community College
+
+    Link: https://pittcc.edu/academics/academic-programs/business-division/business-and-entrepreneurship-department/accounting-and-finance-financial-services/financial-services-background/
+
+    Author: PITT College
+    
+*/
+
+/* Background */
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #0798f6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+}
+
+#logoHeader {
+    height: 70px;
+    width: 70px;
+}
+
+#headerText {
+    color: #000000;
+    font-size: 24px;
+}
+
+/* Navigation */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar li {
+    margin: 5px;
+}
+
+.navbar a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a:hover {
+    background-color: #4f4d4d;
+}
+
+/* Donate Button */
+#DonateButton {
+    background-color: #4f4d4d;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#ProductsAndServicesTitles {
+    text-align: center;
+}
+
+/* Table Styling */
+table {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 1.5em; 
+    padding: 10px;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+td.empty {
+    background-color: #f9f9f9;
+}
+
+td.current-day {
+    background-color: #ffcc00; 
+    font-weight: bold;
+}
+
+.nav-button { 
+    cursor: pointer; 
+    padding: 10px; 
+    font-size: 1em; 
+}
+
+/* Case Studies Section */
+.Case-Studies {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+/* Services Section */
+.Services {
+    background-image: url("../Assets/servicesBackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+}
+
+#Services-List {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/* Donate Section */
+.Donate {
+    background-image: url("../Assets/donateBackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+    text-align: center;
+}
+
+#other-amount {
+    margin-left: 350px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+#logoFooter {
+    height: 90px;
+    width: 90px;
+}
+
+#SupportText, #newsletterFooterText {
+    color: #000000;
+}
+
+#donateFooter, #newsletterFooter {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+
+#donateFooter:hover, #newsletterFooter:hover {
+    font-weight: bold;
+}
+
+#donateFooter:hover {
+    background-color: #0338ff;
+}
+
+#newsletterFooter:hover {
+    background-color: #780fd0;
+}
+
+/* Responsive Design Adjustments */
+
+/* Medium Screens (Tablets) */
+@media (max-width: 960px) {
+    header {
+        padding: 15px;
+    }
+
+    #logoHeader {
+        height: 60px;
+        width: 60px;
+    }
+
+    #headerText {
+        font-size: 20px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li {
+        margin: 5px 0;
+    }
+
+    #DonateButton {
+        width: 100%; /* Full-width button for small screens */
+    }
+
+    /* Table */
+    table {
+        width: 95%;
+    }
+
+    /* Case Studies Section */
+    .Case-Studies h1, .Case-Studies h3, .Case-Studies h6 {
+        font-size: 18px;
+    }
+
+    #CS1Image, #CS2Image {
+        height: 120px;
+        width: 120px;
+    }
+
+    /* Services Section */
+    #Services-List, #ListText {
+        font-size: 16px;
+    }
+
+    /* Donate Section */
+    .Donate {
+        padding: 20px;
+    }
+
+    #donateText {
+        font-size: 16px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 10px;
+    }
+}
+
+/* Small Screens (Mobile) */
+@media (max-width: 600px) {
+    #headerText {
+        font-size: 18px;
+    }
+
+    #DonateButton {
+        font-size: 14px;
+        padding: 8px 16px; /* Smaller padding for mobile */
+    }
+
+    /* Table Adjustments */
+    table th, table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    /* Case Studies Text */
+    #CSText {
+        font-size: 14px;
+    }
+
+    /* Donation Section Adjustments */
+    #other-amount {
+        margin-left: 0;
+        width: 100%; /* Full-width input for small screens */
+        text-align: center;
+    }
+
+    .Donate p, .Donate h1, .Donate h2 {
+        font-size: 14px;
+    }
+
+    /* Footer Logo */
+    #logoFooter {
+        height: 70px;
+        width: 70px;
+    }
+}

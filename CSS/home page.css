@@ -1,0 +1,270 @@
+/* Basic structure for body and general page styling */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-image: url("../Assets/backImage.png");
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, Helvetica, sans-serif;
+
+  /*background-image: url(Assets/backImage.png);*display: ;
+
+  from : shutter shock: 
+  ;
+
+  https://www.shutterstock.com/video/clip-1054345952-motion-abstract-technology-concept-background-digital-line
+
+  author: PhetcharatBiRTH
+
+  author profile: https://www.shutterstock.com/g/AroonPhetcharat/video
+  */
+}
+
+p {
+  color: #ffffff;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+}
+
+#logoHeader {
+  height: 70px;
+  width: 70px;
+}
+
+#headerText {
+  color: #000000;
+  font-size: 24px;
+}
+
+/* Navigation */
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navbar li {
+  margin: 5px;
+}
+
+.navbar a {
+  color: #000000;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a:hover {
+  background-color: #4f4d4d;
+}
+
+/* Buttons */
+#DonateButton, #AboutButton {
+  background-color: #4f4d4d;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+#AboutButton:hover {
+  background-color: #09e7f1;
+  font-weight: bold;
+}
+
+#HomePageTitle {
+  color: #ffffff;
+}
+
+/* Mission Section */
+#missionHeading {
+  color: #ffffff;
+  font-size: 28px;
+  text-align: center;
+}
+
+#missionText {
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.Map {
+  width: 100%; 
+  height: 500px;
+}
+
+#NewsletterForm {
+  width: 100%;
+  max-width: 600px;
+  height: 600px;
+  border: 1px solid #ccc;
+}
+
+#youtubeLink {
+  color: #ffffff;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+}
+
+#ProjectsTitle {
+  color: #ffffff;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Projects section grid */
+.Projects {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.grid-item {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+#EquityImage, #ExchangeImage, #SustainabilityImage, #FacilitiesImage {
+  height: 200px;
+  width: 200px;
+  background-color: #ffffff;
+}
+
+#EquityText, #ExchangeText, #SustainabilityText, #FacilitiesText {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* Footer section */
+footer {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+#logoFooter {
+  height: 90px;
+  width: 90px;
+}
+
+#SupportText, #newsletterFooterText {
+  color: #000000;
+}
+
+#donateFooter, #newsletterFooter {
+  background-color: #ffffff;
+  padding: 15px;
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+
+#donateFooter:hover, #newsletterFooter:hover {
+  font-weight: bold;
+}
+
+#donateFooter:hover {
+  background-color: #0338ff;
+}
+
+#newsletterFooter:hover {
+  background-color: #780fd0;
+}
+
+/* Adjustments for screens smaller than 960px */
+@media (max-width: 960px) {
+
+  /* Adjusting header and navigation bar */
+  header {
+    text-align: center;
+    padding: 30px;
+  }
+
+  #logoHeader {
+    position: relative;
+    margin: 0 auto;
+  }
+
+  #headerText {
+    position: static;
+    margin: 10px auto;
+    font-size: 20px;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .navbar li {
+    display: block;
+  }
+
+  /* Mission Section on smaller screens */
+  #missionHeading, #missionText {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  /* Projects section on smaller screens */
+  .Projects {
+    grid-template-columns: 1fr; /* Single column on small screens */
+    padding: 10px;
+    gap: 10px;
+  }
+
+  /* Adjust grid item styling */
+  .grid-item {
+    padding: 10px;
+  }
+
+  #EquityImage, #ExchangeImage, #SustainabilityImage, #FacilitiesImage {
+    height: 150px;
+    width: 150px;
+  }
+
+  /* Buttons adjust to full width */
+  #DonateButton, #AboutButton {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  /* Footer adjustments */
+  footer {
+    padding: 10px;
+  }
+
+  .SocialsFooter {
+    position: relative;
+    margin-top: 20px;
+  }
+}
+
+
+
+ 

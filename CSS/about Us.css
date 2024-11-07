@@ -1,0 +1,215 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+}
+
+#logoHeader {
+  height: 70px;
+  width: 70px;
+}
+
+#headerText {
+  color: #000000;
+  font-size: 24px;
+}
+
+/* Navigation */
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navbar li {
+  margin: 5px;
+}
+
+.navbar a {
+  color: #000000;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a:hover {
+  background-color: #4f4d4d;
+}
+
+#DonateButton {
+  background-color: #4f4d4d;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+#BannerPhoto {
+  width: 100%;
+  height: auto;
+}
+
+#AboutUsTitle {
+  text-align: center;
+  color: #000000;
+  font-weight: bolder;
+  font-size: 32px;
+  margin-top: 20px;
+}
+
+#AboutUsText {
+  text-align: center;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bolder;
+  margin-top: 10px;
+}
+
+.AboutContents {
+  background-color: grey;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.AboutContents2 {
+  background-color: #07b1f6;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#About-Image {
+  height: 150px;
+  width: 150px;
+  display: block;
+  margin: 10px auto;
+}
+
+#About-Text {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+}
+
+#contactLink:hover {
+  color: #4f4d4d;
+}
+
+/* Footer */
+footer {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+#logoFooter {
+  height: 90px;
+  width: 90px;
+}
+
+#SupportText, #newsletterFooterText {
+  color: #000000;
+}
+
+#donateFooter, #newsletterFooter {
+  background-color: #ffffff;
+  padding: 15px;
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+
+#donateFooter:hover, #newsletterFooter:hover {
+  font-weight: bold;
+}
+
+#donateFooter:hover {
+  background-color: #0338ff;
+}
+
+#newsletterFooter:hover {
+  background-color: #780fd0;
+}
+
+
+@media (max-width: 960px) {
+
+  header {
+    text-align: center;
+    padding: 30px;
+  }
+
+  #logoHeader {
+    position: relative;
+    margin: 0 auto;
+  }
+
+  #headerText {
+    position: static;
+    margin: 10px auto;
+    font-size: 20px;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li {
+    display: block;
+  }
+
+  /* Banner image */
+  #BannerPhoto {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Title and text for About Us section */
+  #AboutUsTitle {
+    font-size: 24px;
+    margin-top: 15px;
+  }
+
+  #AboutUsText {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+
+  /* Content sections */
+  .AboutContents, .AboutContents2 {
+    padding: 15px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* Adjust image sizes */
+  #About-Image {
+    height: 120px;
+    width: 120px;
+  }
+
+  /* Footer adjustments */
+  footer {
+    padding: 10px;
+  }
+}
